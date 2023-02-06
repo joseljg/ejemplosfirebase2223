@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ct_mostrar_alumno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MostrarAlumnos">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_alumnos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_buscar_nombre2" />
+
+    <Button
+        android:id="@+id/bt_add_alumno2"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:onClick="addAlumno"
+        android:text="Añadir Alumno"
+        app:layout_constraintBottom_toTopOf="@+id/edt_buscar_nombre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_buscar_nombre2"
+        android:layout_width="239dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Nombre buscado"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_buscar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_add_alumno2" />
+
+    <Button
+        android:id="@+id/bt_buscar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="buscarAlumnos1"
+        android:text="Buscar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_buscar_nombre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_buscar_nombre2"
+        app:layout_constraintTop_toTopOf="@+id/edt_buscar_nombre2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
