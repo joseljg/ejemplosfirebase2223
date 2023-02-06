@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -23,6 +24,7 @@
             android:name=".DetallesAlumnoActivity"
             android:exported="false" />
         <activity
+            android:noHistory = "false"
             android:name=".MostrarAlumnos"
             android:exported="false" />
         <activity
